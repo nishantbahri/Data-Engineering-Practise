@@ -2,5 +2,5 @@
 
 # SQL questions
 
-[SQL-Questions](SQL/SQL_README.md)
+[SQL](SQL/SQL_README.md)
 
