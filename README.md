@@ -1,6 +1,6 @@
 # Data-Engineering-Practise
 
-# SQL questions
+# SQL Questions/ Concepts
 
 [SQL](SQL/SQL_README.md)
 
