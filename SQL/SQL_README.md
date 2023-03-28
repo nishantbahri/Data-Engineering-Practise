@@ -14,18 +14,26 @@
 
 URL VIDEO:  [Question](https://www.youtube.com/watch?v=qyAgWL066Vo&list=PLBTZqjSKn0IeKBQDjLmzisazhqQy4iGkb)
 
+SOLUTION : [SOLUTION](Questions/icc_world_cup.sql)
+
 ## Repeat customers and new Customers
 ![img.png](images/img.png)
 
 URL VIDEO :  [Question](https://www.youtube.com/watch?v=MpAMjtvarrc&list=PLBTZqjSKn0IeKBQDjLmzisazhqQy4iGkb&index=2)
+
+SOLUTION : [SOLUTION](Questions/new_repeat_customers.sql)
 
 ## Resources used in the different floors of the office building
 ![img.png](images/img.png)
 
 URL VIDEO :  [Question](https://www.youtube.com/watch?v=P6kNMyqKD0A&list=PLBTZqjSKn0IeKBQDjLmzisazhqQy4iGkb&index=3)
 
+SOLUTION : [SOLUTION](Questions/resources_used.sql)
+
 ## Unbanned riders customers trips
 URL VIDEO :  [Question](https://www.youtube.com/watch?v=EjzhMv0E_FE&list=PLBTZqjSKn0IeKBQDjLmzisazhqQy4iGkb&index=7)
+
+SOLUTION : [SOLUTION](Questions/trips.sql)
 
 
 # SQL Concepts 
@@ -33,4 +41,4 @@ URL VIDEO :  [Question](https://www.youtube.com/watch?v=EjzhMv0E_FE&list=PLBTZqj
 
 
 ## sql-window-functions-rows-clause
-URL VIDEO : [Concept](https://learnsql.com/blog/sql-window-functions-rows-clause/)
+URL : [Concept](https://learnsql.com/blog/sql-window-functions-rows-clause/)
