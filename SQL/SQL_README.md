@@ -3,7 +3,7 @@
 # SQL questions
 1. [Build the league table](#Build-the-league-table)
 2. [Repeat customers and new Customers](#Repeat customers and new Customers)
-3. [Resources used in the different floors of the office building](#third-example)
+3. [Resources used in the different floors of the office building](#Resources used in the different floors of the office building)
 4. [Unbanned riders/customers trips](#Unbanned-riders/customers-trips)
 
 ## Build the league table
