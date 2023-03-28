@@ -24,5 +24,6 @@ URL :  [Question](https://www.youtube.com/watch?v=EjzhMv0E_FE&list=PLBTZqjSKn0Ie
 
 # Concepts 
 sql-window-functions-rows-clause
+
 URL : [Concept](https://learnsql.com/blog/sql-window-functions-rows-clause/)
  
