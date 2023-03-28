@@ -4,7 +4,7 @@
 1. [Build the league table](#Build-the-league-table)
 2. [Repeat customers and new Customers](#Repeat-customers-and-new-Customers)
 3. [Resources used in the different floors of the office building](#Resources-used-in-the-different-floors-of-the-office-building)
-4. [Unbanned riders/customers trips](#Unbanned-riders/customers-trips)
+4. [Unbanned riders/customers trips](#Unbanned-riders-customers-trips)
 
 ## Build the league table
 ![img.png](images/icc_world_cup.png)
@@ -21,7 +21,7 @@ URL :  [Question](https://www.youtube.com/watch?v=MpAMjtvarrc&list=PLBTZqjSKn0Ie
 
 URL :  [Question](https://www.youtube.com/watch?v=P6kNMyqKD0A&list=PLBTZqjSKn0IeKBQDjLmzisazhqQy4iGkb&index=3)
 
-## Unbanned riders/customers trips
+## Unbanned riders customers trips
 URL :  [Question](https://www.youtube.com/watch?v=EjzhMv0E_FE&list=PLBTZqjSKn0IeKBQDjLmzisazhqQy4iGkb&index=7)
 
 
