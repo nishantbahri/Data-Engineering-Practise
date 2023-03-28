@@ -1,6 +1,9 @@
 # Data-Engineering-Practise
 
-# SQL questions
+1. [SQL questions](#SQL-Questions)
+2. [SQL Concepts](#SQL-Concepts)
+
+# SQL Questions
 1. [Build the league table](#Build-the-league-table)
 2. [Repeat customers and new Customers](#Repeat-customers-and-new-Customers)
 3. [Resources used in the different floors of the office building](#Resources-used-in-the-different-floors-of-the-office-building)
@@ -25,7 +28,7 @@ URL :  [Question](https://www.youtube.com/watch?v=P6kNMyqKD0A&list=PLBTZqjSKn0Ie
 URL :  [Question](https://www.youtube.com/watch?v=EjzhMv0E_FE&list=PLBTZqjSKn0IeKBQDjLmzisazhqQy4iGkb&index=7)
 
 
-# Concepts 
+# SQL Concepts 
 1. [window functions rows clause](#sql-window-functions-rows-clause)
 
 
