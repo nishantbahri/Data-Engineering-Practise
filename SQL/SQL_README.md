@@ -1,6 +1,6 @@
 # Data-Engineering-Practise
 
-1. [SQL questions](#SQL-Questions)
+1. [SQL Questions](#SQL-Questions)
 2. [SQL Concepts](#SQL-Concepts)
 
 # SQL Questions
