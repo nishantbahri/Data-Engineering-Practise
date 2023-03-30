@@ -1,0 +1,42 @@
+# CREATE TABLE SALES_FQ (
+# ORDER_ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+# CUSTOMER_ID INT,
+# SALARY NUMERIC(10,2),
+# ORDER_DATE DATETIME
+# );
+#
+# INSERT INTO SALES_FQ
+# (ORDER_ID, CUSTOMER_ID, SALARY, ORDER_DATE) VALUES
+# (10001,90001, 10000, '2022-02-01 09.00.00'),
+# (10002,90001, 10000, '2022-02-03 09.00.00'),
+# (10003,90001, 10000, '2022-02-07 09.00.00'),
+# (10004,90001, 20000, '2022-02-09 09.00.00'),
+# (10005,90001, 20000, '2022-02-14 09.00.00'),
+# (10006,90001, 10000, '2022-02-14 09.00.00'),
+# (10007,90001, 10000, '2022-02-17 09.00.00'),
+# (10009,90001, 80000, '2022-02-21 09.00.00'),
+# (100020,90001, 10000, '2022-02-23 09.00.00'),
+# (100021,90001, 10000, '2022-02-28 09.00.00'),
+#
+# (10010,90002, 10000, '2022-02-01 09.00.00'),
+# (10013,90002, 30000, '2022-02-09 09.00.00'),
+# (10014,90002, 10000, '2022-02-14 09.00.00'),
+# (10015,90002, 10000, '2022-02-14 09.00.00'),
+# (10016,90002, 70000, '2022-02-17 09.00.00'),
+# (10017,90002, 10000, '2022-02-21 09.00.00'),
+# (10019,90002, 10000, '2022-02-28 09.00.00');
+
+# 5.  Definition of Frequent Customer:
+#     A Customer who has transacts on the platform atleast once in every 5 days since last transaction
+
+with SALES_FQ_HISTORY AS (
+SELECT ORDER_ID ,CUSTOMER_ID, SALARY,ORDER_DATE
+       , lag(ORDER_DATE) over (partition by CUSTOMER_ID order by ORDER_DATE asc) as previous_order_date
+FROM SALES_FQ)
+
+, sales_fq_flag as (
+                SELECT *, DATEDIFF(ORDER_DATE,previous_order_date) AS frequent_customer_flag
+FROM SALES_FQ_HISTORY
+    )
+
+select distinct customer_id from sales_fq_flag where frequent_customer_flag <=5;
