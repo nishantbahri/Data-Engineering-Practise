@@ -40,3 +40,42 @@ FROM SALES_FQ_HISTORY
     )
 
 select distinct customer_id from sales_fq_flag where frequent_customer_flag <=5;
+
+
+-- b.	Evaluate cumulative sum of salary for each customer in ascending order of ORDER_DATE
+
+SELECT ORDER_ID ,CUSTOMER_ID, SALARY,ORDER_DATE
+       , sum(SALARY) over (partition by CUSTOMER_ID order by ORDER_DATE,ORDER_ID ) as cum_sum
+FROM SALES_FQ
+
+-- c.	Order IDs which constitute Top 80 percentile basis Order_Value
+with order_percentile as (
+SELECT ORDER_ID ,CUSTOMER_ID, SALARY,ORDER_DATE
+        , sum(SALARY) over (order by SALARY ) as running_sum
+        , sum(SALARY) over () as total_sum
+        , 0.8 * sum(SALARY) over () as eighty_percentile_sum
+FROM SALES_FQ
+)
+select distinct order_id
+from order_percentile
+where running_sum  <= eighty_percentile_sum
+
+-- d . Create a coupon_flag which becomes active on alternate transactions, signifying
+-- availability of coupon. Assume coupon_flag is 1 (Active) on first transaction, find
+-- number of days an offer was valid for each customer.
+
+-- id  day      flag
+-- 101 1st march 1
+-- 101 2nd march 1
+-- 101 3rd march 1
+
+WITH alternate_orders_rank AS (
+SELECT * , ROW_NUMBER() over (PARTITION BY CUSTOMER_ID ORDER BY ORDER_DATE) AS rn
+FROM  SALES_FQ
+)
+SELECT *, CASE WHEN rn % 2 = 0 then 0 else 1 end as coupon_flag
+FROM alternate_orders_rank;
+
+
+
+
