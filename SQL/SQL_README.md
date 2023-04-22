@@ -9,7 +9,9 @@
 2. [Repeat customers and new Customers](#Repeat-customers-and-new-Customers)
 3. [Resources used in the different floors of the office building](#Resources-used-in-the-different-floors-of-the-office-building)
 4. [Unbanned riders/customers trips](#Unbanned-riders-customers-trips)
-5. [Finding Frequent Customer](#Finding-Frequent-Customer)
+5. [Sales of Previous month sale, next month sale, ytd sale for every state](#Sales)
+6. [Grandaparent is alive or not](#Grandaparent-is-alive-or-not)
+7. [Finding Frequent Customer](#Finding-Frequent-Customer)
 
 ## Build the league table
 ![img.png](images/icc_world_cup.png)
@@ -37,6 +39,15 @@ URL VIDEO :  [Question](https://www.youtube.com/watch?v=EjzhMv0E_FE&list=PLBTZqj
 
 SOLUTION : [SOLUTION](Questions/trips.sql)
 
+## Sales
+SOLUTION : [SOLUTION](Questions/sales.sql)
+
+- Previous month sale, next month sale, ytd sale for every state
+
+## Grandaparent is alive or not
+SOLUTION : [SOLUTION](Questions/grandparent_alive.sql)
+
+- Previous month sale, next month sale, ytd sale for every state
 ## Finding Frequent Customer 
 
 - A Customer who has transacts on the platform atleast once in every 5 days since last transaction
