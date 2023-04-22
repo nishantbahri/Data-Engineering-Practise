@@ -2,12 +2,14 @@
 
 1. [SQL Questions](#SQL-Questions)
 2. [SQL Concepts](#SQL-Concepts)
+3. [SQL Assignments](#SQL-Assignments)
 
 # SQL Questions
 1. [Build the league table](#Build-the-league-table)
 2. [Repeat customers and new Customers](#Repeat-customers-and-new-Customers)
 3. [Resources used in the different floors of the office building](#Resources-used-in-the-different-floors-of-the-office-building)
 4. [Unbanned riders/customers trips](#Unbanned-riders-customers-trips)
+5. [Finding Frequent Customer](#Finding-Frequent-Customer)
 
 ## Build the league table
 ![img.png](images/icc_world_cup.png)
@@ -35,6 +37,11 @@ URL VIDEO :  [Question](https://www.youtube.com/watch?v=EjzhMv0E_FE&list=PLBTZqj
 
 SOLUTION : [SOLUTION](Questions/trips.sql)
 
+## Finding Frequent Customer 
+
+- A Customer who has transacts on the platform atleast once in every 5 days since last transaction
+
+SOLUTION : [SOLUTION](Questions/frequent_customer.sql)
 
 # SQL Concepts 
 1. [window functions rows clause](#sql-window-functions-rows-clause)
@@ -42,3 +49,7 @@ SOLUTION : [SOLUTION](Questions/trips.sql)
 
 ## sql-window-functions-rows-clause
 URL : [Concept](https://learnsql.com/blog/sql-window-functions-rows-clause/)
+
+# SQL Assignments
+
+Assignement 1 (Asked by a car company) : [ASSIGNMENT](Assignments/assignment_car_company.docx)
